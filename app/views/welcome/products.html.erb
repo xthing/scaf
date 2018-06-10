@@ -2,17 +2,17 @@
 
 <table border="2">
     <tr>
-        <th>Name</th>
-	<th>Price</th>
+    	<th>Name</th>
+		<th>Price</th>
         <th>Quantity</th>
     </tr>
-
+<!-- Add products -->
     <% @products.each do |product| %>
         <tr>
             <td><%= product.name %></td>
             <td><%= number_to_currency product.price %></td>
-	    <td><%= product.quantity %></td>
-	</tr>
+	    	<td><%= product.quantity %></td>
+		</tr>
     <% end %>
 </table>
 
